@@ -3,6 +3,4 @@ it is a combination of c++ and asm it has an simple cursor and printing function
 goals:
   MAKE AN IDT
 screenshots :
-
-Inline-style: 
-![alt text](https://github.com/li7r/os/a.jpg)
+![alt text](https://raw.githubusercontent.com/li7r/os/master/a.jpg)
