@@ -17,6 +17,7 @@
 5. 2d game.<br>
 6. multitasking.<br>
 7. boot from Q bootloader.<br>
+8. user mode.<br>
 ## Goals :<br>
   MAKE A SIMPLE GUI (JUST A BACK GROUND WITH CURSOR)<br>
 ## Screenshots :<br>
