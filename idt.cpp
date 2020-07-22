@@ -17,7 +17,7 @@ void init_idt(){
 		_idt[t].zero = 0;
 		_idt[t].offset_1 = (uint16_t)(((uint64_t)&isr1&0x000000000000ffff));
 		_idt[t].offset_2 = (uint16_t)(((uint64_t)&isr1&0x00000000ffff0000) >> 16);
-		_idt[t].offset_2 = (uint32_t)(((uint64_t)&isr1&0xffffffff00000000) >> 32);
+		_idt[t].offset_3 = (uint32_t)(((uint64_t)&isr1&0xffffffff00000000) >> 32);
 		_idt[t].ist = 0;
 		_idt[t].selector = 0x08;
 		_idt[t].type_attr = 0x8e;
@@ -30,4 +30,5 @@ void init_idt(){
 extern "C" void isr1_handler(){
 	outb(0x20,0x20);
 	outb(0xa0,0x20);
+	return;
 }
