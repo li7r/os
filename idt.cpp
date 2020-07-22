@@ -1,45 +1,33 @@
 #pragma once
-struct IDT_entry{
-	unsigned short int offset_lowerbits;
-	unsigned short int selector;
-	unsigned char zero;
-	unsigned char type_attr;
-	unsigned short int offset_higherbits;
-}; 
-struct IDT_entry IDT[256];
+#include "types.cpp"
+struct IDT64 {
+   uint16_t offset_1; // offset bits 0..15
+   uint16_t selector; // a code segment selector in GDT or LDT
+   uint8_t ist;   
+   uint8_t type_attr; // type and attributes
+   uint16_t offset_2; // offset bits 16..31
+   uint32_t offset_3; // offset bits 32..63
+   uint32_t zero;     // reserved
+};
+extern IDT64 _idt[256];
+extern uint64_t isr1;
 extern "C" void load_idt();
-extern "C" void irq0();
-void idt_init(void) { 
-	unsigned long irq0_address;       
-	unsigned long idt_address;
-	unsigned long idt_ptr[2];
- 
-        /* remapping the PIC */
-	outb(0x20, 0x11);
-        outb(0xA0, 0x11);
-        outb(0x21, 0x20);
-        outb(0xA1, 40);
-        outb(0x21, 0x04);
-        outb(0xA1, 0x02);
-        outb(0x21, 0x01);
-        outb(0xA1, 0x01);
-        outb(0x21, 0x0);
-        outb(0xA1, 0x0);
- 
-	irq0_address = (unsigned long)irq0; 
-	IDT[32].offset_lowerbits = irq0_address & 0xffff;
-	IDT[32].selector = 0x08; /* KERNEL_CODE_SEGMENT_OFFSET */
-	IDT[32].zero = 0;
-	IDT[32].type_attr = 0x8e; /* INTERRUPT_GATE */
-	IDT[32].offset_higherbits = (irq0_address & 0xffff0000) >> 16;
- 
-	/* fill the IDT descriptor */
-	idt_address = (unsigned long)IDT ;
-	idt_ptr[0] = (sizeof (struct IDT_entry) * 256) + ((idt_address & 0xffff) << 16);
-	idt_ptr[1] = idt_address >> 16 ;
-  
-	load_idt(); 
+void init_idt(){
+	for(uint64_t t = 0;t<256;t++){
+		_idt[t].zero = 0;
+		_idt[t].offset_1 = (uint16_t)(((uint64_t)&isr1&0x000000000000ffff));
+		_idt[t].offset_2 = (uint16_t)(((uint64_t)&isr1&0x00000000ffff0000) >> 16);
+		_idt[t].offset_2 = (uint32_t)(((uint64_t)&isr1&0xffffffff00000000) >> 32);
+		_idt[t].ist = 0;
+		_idt[t].selector = 0x08;
+		_idt[t].type_attr = 0x8e;
+	}
+	outb(0x21,0xfd);
+	outb(0xa1,0xff);
+	load_idt();
+
 }
-void irq0_handler(void) {
-          outb(0x20, 0x20); //EOI
+extern "C" void isr1_handler(){
+	outb(0x20,0x20);
+	outb(0xa0,0x20);
 }
