@@ -1,5 +1,5 @@
 # Q OS 64<br>
-it is a combination of c++ and asm   it uses grub as a boot loader.<br>
+## it is a combination of c++ and asm   it uses grub as a boot loader.<br>
 ## If you found a bug or you want to improve the os send an email to u5u5@protonmail.com .<br>
 ## Done :<br>
 1. gdt.<br>
