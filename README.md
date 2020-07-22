@@ -1,5 +1,5 @@
 # Q OS 64 bit<br>
-## Q OS is a 64 bit os and it is fast and simple !.<br>
+## Q OS is a 64 bit os .<br>
 ## Done :<br>
 1. gdt.<br>
 2. paging.<br>
