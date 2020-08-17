@@ -23,4 +23,4 @@
 ## Screenshots :<br>
 ![ERROR](https://raw.githubusercontent.com/li7r/os/master/a.jpg)<br>
 ## If you find a bug or you want to improve the os send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
-## donations at <a href="https://paypal.me/u5u5">paypal</a> .<br>
+## donations at <a href="https://paypal.me/b5d">paypal</a> .<br>
