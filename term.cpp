@@ -47,3 +47,25 @@ static uint8_t x=0,y=0;
                     VideoMemory[80*y+x] = (VideoMemory[80*y+x] & 0xFF00) | ' ';
             update_cursor(0,0);
 }
+void write_string( int colour, const char *string )
+{
+    volatile char *video = (volatile char*)0xB8000;
+    while( *string != 0 )
+    {
+        *video++ = *string++;
+        *video++ = colour;
+    }
+}
+void hex(uint32_t num)
+{
+   char buffer[11];
+   buffer[0] = '0';
+   buffer[1] = 'x';
+   for (int i = 7; i >= 0; i--)
+   {
+      buffer[i+2] = static_cast<char>(num % 16 < 10 ? '0' + num % 16 : 'A' - 10 + num % 16);
+      num /= 16;
+   }
+   buffer[10]= '\0';         /* terminate string */
+   write_string(9,buffer);     /* print it */
+}

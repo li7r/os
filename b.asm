@@ -1,5 +1,6 @@
 extern kmain
 global start
+global mode13h
 section .boot
 bits 32
 start:
@@ -60,6 +61,17 @@ start:
     hlt
 section .text
 bits 64
+;_mode13h:
+ ;   mov ah, 0
+  ;  mov al, 13h
+   ; int 10h
+    ;ret
+ 
+;_textmode:
+ ;   mov ah, 00
+  ;  mov al, 3h
+   ; int 10h
+    ;ret
 %include "idt.asm"
 long_mode_start:
 	jmp kmain
