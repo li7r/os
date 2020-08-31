@@ -9,12 +9,12 @@
 7. gui.<br>
 7. pci.<br>
 8. lua is ported !.<br>
+9. multitasking.<br>
+10. user mode.<br>
 ## Goals :<br>
 1. support exe.<br>
 2. ata.<br>
-3. multitasking.<br>
 4. boot from custom bootloader.<br>
-5. user mode.<br>
 6. networking.<br>
 7. sound.<br>
 ## Screenshots :<br>
