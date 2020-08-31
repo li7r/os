@@ -15,7 +15,7 @@
 3. multitasking.<br>
 4. boot from custom bootloader.<br>
 5. user mode.<br>
-6. simple networking.<br>
+6. networking.<br>
 7. sound.<br>
 ## Screenshots :<br>
 ![ERROR](https://raw.githubusercontent.com/li7r/os/master/a.jpg)<br>
