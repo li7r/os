@@ -12,11 +12,11 @@
 9. multitasking.<br>
 10. user mode.<br>
 11. ata.<br>
+12. sound.<br>
 ## Goals :<br>
 1. support exe.<br>
 2. boot from custom bootloader.<br>
 3. networking.<br>
-4. sound.<br>
 ## Screenshots :<br>
 ![ERROR](https://raw.githubusercontent.com/li7r/os/master/a.jpg)<br>
 ## If you find a bug send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
