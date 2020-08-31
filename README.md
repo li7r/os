@@ -1,5 +1,4 @@
-# Q OS 64 bit<br>
-## Q OS is a 64 bit os it is programmed with a combination of c++ and assembly it uses grub as a bootloader .<br>
+## q os is a SIMPLE and POWERFUL operating system .<br>
 ## Done :<br>
 1. gdt.<br>
 2. paging.<br>
