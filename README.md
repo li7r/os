@@ -11,12 +11,12 @@
 8. lua is ported !.<br>
 9. multitasking.<br>
 10. user mode.<br>
+11. ata.<br>
 ## Goals :<br>
 1. support exe.<br>
-2. ata.<br>
-4. boot from custom bootloader.<br>
-6. networking.<br>
-7. sound.<br>
+2. boot from custom bootloader.<br>
+3. networking.<br>
+4. sound.<br>
 ## Screenshots :<br>
 ![ERROR](https://raw.githubusercontent.com/li7r/os/master/a.jpg)<br>
 ## If you find a bug send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
