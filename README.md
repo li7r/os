@@ -16,6 +16,7 @@
 4. boot from custom bootloader.<br>
 5. user mode.<br>
 6. simple networking.<br>
+7. sound.<br>
 ## Screenshots :<br>
 ![ERROR](https://raw.githubusercontent.com/li7r/os/master/a.jpg)<br>
 ## If you find a bug send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
