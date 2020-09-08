@@ -15,9 +15,8 @@
 12. sound.<br>
 13. networking.<br>
 14. PE+ support !.<br>
-## Goals :<br>
-1. support linkable and excutable file formate.<br>
-2. boot from custom bootloader.<br>
+15. support linkable and excutable file formate.<br>
+16. boot from custom bootloader.<br>
 ## Screenshots :<br>
 ![ERROR](https://raw.githubusercontent.com/li7r/os/master/a.jpg)<br>
 ## If you found a bug send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
