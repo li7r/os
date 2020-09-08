@@ -13,11 +13,12 @@
 10. user mode.<br>
 11. ata.<br>
 12. sound.<br>
+13. networking.<br>
+14. PE+ support !.<br>
 ## Goals :<br>
-1. support exe.<br>
+1. support linkable and excutable file formate.<br>
 2. boot from custom bootloader.<br>
-3. networking.<br>
 ## Screenshots :<br>
 ![ERROR](https://raw.githubusercontent.com/li7r/os/master/a.jpg)<br>
-## If you find a bug send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
-## donations at <a href="https://paypal.me/b5d">paypal</a> .<br>
+## If you found a bug send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
+## donations on <a href="https://paypal.me/b5d">paypal</a> .<br>
