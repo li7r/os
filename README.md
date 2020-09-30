@@ -18,6 +18,6 @@
 15. support linkable and excutable file formate.<br>
 16. boot from custom bootloader.<br>
 ## Screenshots :<br>
-![ERROR](https://raw.githubusercontent.com/li7r/os/master/a.jpg)<br>
+![ERROR](https://raw.githubusercontent.com/li7r/os/master/b.jpg)<br>
 ## If you found a bug send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
 ## donations on <a href="https://paypal.me/b5d">paypal</a> .<br>
