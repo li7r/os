@@ -1,4 +1,4 @@
-## q os is a SIMPLE and POWERFUL operating system .<br>
+## XENON os is a SIMPLE and POWERFUL operating system .<br>
 ## Done :<br>
 1. gdt.<br>
 2. paging.<br>
