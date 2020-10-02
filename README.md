@@ -2,7 +2,6 @@
 ## Done :<br>
 1. gdt.<br>
 2. paging.<br>
-3. show keyboard interrupts.<br>
 4. 64 bit.<br>
 5. grub.<br>
 6. idt.<br>
