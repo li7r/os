@@ -96,3 +96,31 @@ void PutPixel(uint32_t x, uint32_t y,  uint8_t colorIndex)
     uint8_t* pixelAddress = (uint8_t*)0xA0000 + 320*y + x;
     *pixelAddress = colorIndex;
 }
+void fulls(){
+write_regs(g_320x200x256);
+for(uint32_t y = 0; y < 200; y++){
+for(uint32_t x = 0; x < 320; x++){
+PutPixel(x, y,0x01);}}}
+void loads(){
+while(1){
+for(uint32_t mm = 0; mm < 320; mm++){
+fulls();
+PutPixel(mm, 0,0x04);
+PutPixel(mm, 1,0x04);
+PutPixel(mm, 2,0x04);
+PutPixel(mm, 3,0x04);
+PutPixel(mm, 4,0x04);
+PutPixel(mm, 5,0x04);
+PutPixel(mm, 6,0x04);
+PutPixel(mm, 7,0x04);
+PutPixel(mm+1, 0,0x04);
+PutPixel(mm+1, 1,0x04);
+PutPixel(mm+1, 2,0x04);
+PutPixel(mm+1, 3,0x04);
+PutPixel(mm+1, 4,0x04);
+PutPixel(mm+1, 5,0x04);
+PutPixel(mm+1, 6,0x04);
+PutPixel(mm+1, 7,0x04);
+}
+}
+}
