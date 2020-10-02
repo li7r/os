@@ -18,6 +18,6 @@
 15. support linkable and excutable file formate.<br>
 16. boot from custom bootloader.<br>
 ## Testing my os :<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S5g-tEqXmJY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-## If you found a bug send an <a href="mailto:u5u5@protonmail.com">email</a> .<br>
+[![ERROR](https://img.youtube.com/vi/S5g-tEqXmJY/0.jpg)](https://www.youtube.com/watch?v=S5g-tEqXmJY)<br>
+## If you found a bug send an <a href="mailto:dhtdhtlzhz@gmail.com">email</a> .<br>
 ## donations on <a href="https://paypal.me/b5d">paypal</a> .<br>
