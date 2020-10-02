@@ -1,7 +1,7 @@
 ## XENON os is a SIMPLE and POWERFUL operating system .<br>
 ## Done :<br>
 1. gdt.<br>
-1. pci.<br>
+1. pic.<br>
 2. paging.<br>
 4. 64 bit.<br>
 5. grub.<br>
