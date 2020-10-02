@@ -47,12 +47,16 @@ void put(char* str)
     update_cursor(x,y);
 }
 void clear(){
-static uint8_t z=0,m=0;
-static uint16_t* VideoMemory = (uint16_t*)0xb8000;
-            for(z = 0; z < 25; z++)
-                for(m = 0; m < 80; m++)
+    static uint16_t* VideoMemory = (uint16_t*)0xb8000;
+
+    static uint8_t x=0,y=0;
+            for(y = 0; y < 25; y++)
+                for(x = 0; x < 80; x++)
+                    VideoMemory[80*y+x] = (VideoMemory[80*y+x] & 0xFF00) | ' ';
+            x = 0;
+            y = 0;
                     
-put("XENON>");
+//put("XENON>");
 }
 void write_string( int colour, const char *string )
 {
@@ -75,7 +79,8 @@ void hex(uint32_t num)
       num /= 16;
    }
    buffer[5]= '\0';
-   char* b[2];
+   put(buffer);
+   /*char* b[2];
    if(buffer[3]=='1'&buffer[4]=='E'){put("A");b[0]="A";}
    else if(buffer[3]=='3'&buffer[4]=='0'){put("B");b[0]="B";}
    else if(buffer[3]=='2'&buffer[4]=='E'){put("C");b[0]="C";}
@@ -110,5 +115,5 @@ void hex(uint32_t num)
    else if(buffer[3]=='0'&buffer[4]=='E'){put("`");}
    else{
    //put(buffer);
-   }
+   }*/
 }

@@ -7,3 +7,10 @@ unsigned char inb(unsigned short port){
 	asm volatile ("inb %1, %0":"=a"(returnval):"Nd"(port));
 	return returnval;
 }
+static inline void io_wait(void)
+{
+    /* TODO: This is probably fragile. */
+    asm volatile ( "jmp 1f\n\t"
+                   "1:jmp 2f\n\t"
+                   "2:" );
+}
